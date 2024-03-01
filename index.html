@@ -16,8 +16,9 @@
 <body>
         <main>
             <h1>絵本検索サービス</h1>
+            <p class="title_info">図書館や本屋さんに行く前のメモに使ってね！</p>
             <form action="" id="search" style="display:none;">
-                <input type="text" id="keyword">
+                <input type="text" id="keyword" placeholder="例）エリック・カール">
                 <button id="submit">探す</button>
             </form>
 
@@ -91,7 +92,7 @@
                         } 
 
                          
-                        view += '<button class="add" data-title="'+ item.volumeInfo.title + '" data-author="' + item.volumeInfo.authors + '" data-isbn="'+ item.volumeInfo.industryIdentifiers.ISBN_10 +'">追加する</button>';
+                        view += '<button class="add" data-title="'+ item.volumeInfo.title + '" data-author="' + item.volumeInfo.authors + '" data-isbn="'+ item.volumeInfo.industryIdentifiers.ISBN_10 +'">メモ追加</button>';
                         view += '</div>';
                     }
 
