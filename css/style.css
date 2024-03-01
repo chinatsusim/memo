@@ -1,0 +1,152 @@
+body{
+  font-family: "jost", "Zen Kaku Gothic New", sans-serif !important;
+  color:#343434;
+}
+
+main {
+  font-size: 32px;
+  margin:auto;
+  width:1200px;
+  min-height: 100%;
+}
+
+
+h1{
+  text-align: center;
+  font-size:36px;
+}
+
+form{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+input[type="text"]{
+  height: 40px;
+  width: 300px;
+  border-radius: 15px;
+  border: 1px solid #343434;
+  padding: 0 10px;
+  margin: 30px;
+}
+
+button {
+  height: 40px;
+  width: 80px;
+  border-radius: 15px;
+  border: 1px solid #343434;
+  background-color: #343434;
+  color:#fff;
+  padding: 0 10px;
+}
+
+#key{
+  font-size:20px;
+  font-weight: 600;
+}
+
+#stored p{
+  font-size:16px;
+  text-align: left;
+}
+
+#stored li{
+  font-size:16px;
+  text-align: left;
+}
+
+.clear {
+  height: 18px;
+  width: 40px;
+  border-radius: 3px;
+  border: 1px solid #343434;
+  background-color: #fff;
+  color:#343434;
+  padding: 0 5px;
+  font-size:11px;
+  margin-left: 10px;
+}
+
+
+#stored h2{
+  font-size:20px;
+  font-weight: 600;
+}
+
+/* 絵本情報 */
+#books{
+  margin:auto;
+}
+
+.bookinfo{
+  margin-top: 30px;
+  margin-left: 30px;
+  border: 1px solid #c2c2c2;
+  padding:20px 30px;
+  background-color: rgb(231, 231, 230);
+  float:left;
+  width:45%;
+  height: 600px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  position: relative;
+}
+
+.bookinfo img{
+  height:200px;
+}
+
+.bookinfo .img_no{
+  height:200px;
+  vertical-align: middle;
+  font-size:20px
+}
+
+.bookinfo ul li{
+  font-size:14px;
+  text-align: left;
+}
+
+
+.bookinfo h2{
+  font-size: 26px;
+  margin-top:10px!important;
+  height:74px
+}
+
+.description{
+    font-size:14px;
+    margin-top:10px;
+    text-align: left!important;
+}
+
+.add{
+  position: absolute;
+  bottom:30px;
+  left:0;
+  right:0;
+  margin:auto;
+}
+
+/* フッター */
+.old{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  font-size: 14px;
+  clear:both;
+  width: 100%;
+  height: 50px;
+}
+
+.new{
+  text-align: center;
+  font-size: 14px;
+  clear:both;
+  width:100%;
+  height: 50px;
+  padding-top:30px;
+} 
