@@ -32,8 +32,6 @@
             <div id="key"></div>
             <div id="books"></div>
 
-            
-
         </main>
 
         <footer class="old">© 2024 NEM</footer>
@@ -91,7 +89,7 @@
                         } 
 
                          
-                        view += '<button class="add" data-title="'+ item.volumeInfo.title + '" data-author="' + item.volumeInfo.authors + '" data-isbn="'+ item.volumeInfo.industryIdentifiers.ISBN_10 +'">メモ追加</button>';
+                        view += '<button class="add" data-title="'+ item.volumeInfo.title + '" data-author="' + item.volumeInfo.authors + '" data-isbn="'+ item.volumeInfo.industryIdentifiers[0].identifier +'">メモ追加</button>';
                         view += '</div>';
                     }
 
@@ -117,7 +115,7 @@
             localStorage.setItem("books", JSON.stringify(books)); //booksの内容をローカルストレージに保存する。
             $("#nothing").hide();
             $("#bookslist").show();
-            $("#bookslist").append('<li>'+title + '/' + author + '('+ year +'/'+ month + '/' + day +'追加)' +'<button class="clear" data-title="'+title +'" data-author=' + author + '">削除</button></li>');
+            $("#bookslist").append('<li>'+isbn + '　|　' +title + '　/　' + author + '　('+ year +'/'+ month + '/' + day +'追加)' +'<button class="clear" data-title="'+title +'" data-author=' + author +'" data-isbn=' + isbn + '">削除</button></li>');
         });
 
         // 取り除く処理
@@ -147,7 +145,7 @@
                 $("#bookslist").show();
                 for (let i=0; i<books.length;i++){
                     let book = books[i];
-                    $("#bookslist").append('<li>'+book.title + '/' + book.author + '('+ book.date +'追加)' +'<button class="clear" data-title="'+book.title +'" data-author=' + book.author + '">削除</button></li>');
+                    $("#bookslist").append('<li>'+book.isbn + '　|　' +book.title + '　/　' + book.author + '　('+ book.date +'追加)' +'<button class="clear" data-title="'+book.title +'" data-author=' + book.author + '">削除</button></li>');
                 }
             } else {
                 $("#nothing").show();
@@ -163,6 +161,3 @@
 </body>
 
 </html>
-
-
-
