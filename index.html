@@ -52,7 +52,7 @@
 
 
             $.getJSON(
-                "https://www.googleapis.com/books/v1/volumes?q=" + encodeURIComponent(input_query),
+                "https://www.googleapis.com/books/v1/volumes?q=" + encodeURIComponent(input_query) + "&maxResults=30&startIndex=0",
                 function(data){
                     console.dir(data);
                 
@@ -60,7 +60,6 @@
 
                     for(let i=0; i<data.items.length; i++){
                         let item = data.items[i]; //itemsのひとつひとつ
-
                         let description = item.volumeInfo.description;
                         let count = 80;
 
