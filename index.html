@@ -145,7 +145,7 @@
                 $("#bookslist").show();
                 for (let i=0; i<books.length;i++){
                     let book = books[i];
-                    $("#bookslist").append('<li>'+book.isbn + '　|　' +book.title + '　/　' + book.author + '　('+ book.date +'追加)' +'<button class="clear" data-title="'+book.title +'" data-author=' + book.author + '">削除</button></li>');
+                    $("#bookslist").append('<li>'+book.isbn + '　|　' +book.title + '　/　' + book.author + '　('+ book.date +'追加)' +'<button class="clear" data-title="'+book.title +'" data-author=' + book.author +'" data-isbn=' + book.isbn + '">削除</button></li>');
                 }
             } else {
                 $("#nothing").show();
