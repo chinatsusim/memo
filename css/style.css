@@ -4,14 +4,19 @@ body{
   width:1200px;
   max-width: 100%;
   margin:auto;
+
+}
+
+.chosei{
+  width: 100%;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding: 10px;
 }
 
 .intro{
   font-size: 14px;
-  width:100%;
 }
 
 
@@ -96,21 +101,23 @@ main {
 /* 絵本情報 */
 #books{
   margin:auto!important;
+  width: 100%;
+  
 }
 
 @media screen and (min-width: 961px) {
 
 .bookinfo{
   margin-top: 30px;
-  margin-left: 30px;
+  margin-left: 25px;
   border: 1px solid #c2c2c2;
   padding:20px 30px;
-  background-color: rgb(231, 231, 230);
   float:left;
-  width:46%;
-  height: 600px;
+  width:47%;
   box-sizing: border-box;
+  height: 600px;
   text-align: center;
+  background-color: rgb(231, 231, 230);
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
   border-radius: 10px;
   position: relative;
