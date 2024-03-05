@@ -14,21 +14,26 @@
 </head>
 
 <body>
-        <main>
-            <h1>絵本検索サービス</h1>
-            <p class="title_info">図書館や本屋さんに行く前のメモに使ってね！</p>
-            <form action="" id="search" style="display:none;">
-                <input type="text" id="keyword" placeholder="例）エリック・カール">
-                <button id="submit">探す</button>
-            </form>
+            <div class="intro">
+                <h1>絵本検索サービス</h1>
+                <p class="title_info">図書館や本屋さんに行く前のメモに使ってね！</p>
+                <form action="" id="search" style="display:none;">
+                    <input type="text" id="keyword" placeholder="例）エリック・カール">
+                    <button id="submit">探す</button>
+                </form>
 
-            <div id="stored">
-                <h2>保存した書籍：</h2>
-                <ul>
-                    <p id="nothing">まだありません</p>
-                    <li id="bookslist" style="display: none"></li>
-                </ul>
-            </div>
+                <div id="stored">
+                    <h2>保存した書籍：</h2>
+                    <ul>
+                        <p id="nothing">まだありません</p>
+                        <li id="bookslist" style="display: none"></li>
+                    </ul>
+                </div>
+                
+            </div>  
+
+        <main>
+        
             <div id="key"></div>
             <div id="books"></div>
 
